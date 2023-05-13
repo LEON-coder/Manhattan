@@ -1,0 +1,61 @@
+@import url(./partials/header.scss);
+@import url(./partials/main-block-anounce.scss);
+
+@font-face {
+	font-family: "SF Pro Display";
+	font-style : bold;
+	src        : local("../../build/fonts/sf-pro-display/SF-Pro-Display-Bold.woff");
+}
+
+@font-face {
+	font-family: "Barlow";
+	font-style : bold;
+	src        : local("../../app/fonts/Barlow/Barlow-Bold.ttf");
+}
+
+@font-face {
+	font-family: "SF Pro Display";
+	font-style : normal;
+	src        : local("app/fonts/sf-pro-display/SFProDisplay-Regular.woff2");
+}
+
+@font-face {
+	font-family: "Staatliches-Regular";
+	font-style : normal;
+	src        : local("../../app/fonts/Staatliches/Staatliches-Regular.woff2");
+	src        : local("../../app/fonts/Staatliches/Staatliches-Regular.woff");
+	src        : local("../../app/fonts/Staatliches/Staatliches-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Stolzl";
+	font-style : normal;
+	src        : local("../../app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
+		local("../../app/fonts/Stolzl/stolzl_medium.otf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Gotham Pro";
+	font-style : normal;
+	src        : local("../../../../app/fonts/Gotham Pro/gothampro_medium.ttf");
+}
+
+body {
+	font-family  : "Stolzl", "Gotham Pro", "Staatliches-Regular";
+	background   : #210e09;
+	display      : grid;
+	justify-items: center;
+}
+
+* {
+	margin : 0;
+	padding: 0;
+}
+
+.wrapper {
+	display      : grid;
+	width        : 1305px;
+	justify-items: center;
+}

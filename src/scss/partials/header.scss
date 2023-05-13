@@ -1,0 +1,83 @@
+header {
+	display: grid;
+	width: 1296px;
+	justify-items: center;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+	align-items: center;
+	margin-top: 30px;
+}
+
+.nav__logo {
+	height: 40px;
+	width: 157.8947296142578px;
+}
+
+.nav__list {
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	margin-left: 211px;
+	margin-right: 189px;
+}
+
+.nav__item {
+	margin-right: 30px;
+	list-style: none;
+}
+
+.nav__link {
+	list-style: none;
+	font-family: Stolzl;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__item:nth-child(1) {
+	width: 60px;
+}
+.nav__item:nth-child(2) {
+	width: 43px;
+}
+.nav__item:nth-child(3) {
+	width: 57px;
+}
+.nav__item:nth-child(4) {
+	width: 124px;
+}
+.nav__item:nth-child(5) {
+	width: 62px;
+}
+.nav__item:nth-child(6) {
+	width: 63px;
+}
+
+.header__wrap {
+	width: 1305px;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 6fr;
+}
+
+.nav__booking-button {
+	height: 21px;
+	font-family: "Stolzl";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 15px 30px;
+	border: 2px solid #d5621d;
+	border-radius: 5px;
+	display: grid;
+	text-decoration: none;
+}
