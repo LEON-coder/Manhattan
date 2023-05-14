@@ -1,0 +1,165 @@
+.kitchen-block {
+	width          : 100%;
+	display        : grid;
+	justify-content: center;
+}
+
+
+.kitchen-block__wrap {
+	display      : grid;
+	height       : auto;
+	width        : 1076px;
+	border-radius: 0;
+	margin-top   : 40px;
+	position     : relative;
+	justify-items: center;
+}
+
+.kitchen-block__header {
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.kitchen-block__block-dishes {
+	display              : grid;
+	height               : 612px;
+	width                : 1076px;
+	grid-template-columns: repeat(2, auto);
+	margin-top           : 80px;
+}
+
+.kitchen-block__dish {
+	display              : grid;
+	height               : 111px;
+	width                : 486px;
+	grid-template-columns: auto auto;
+}
+
+.kitchen-block__dish-block-text {
+	display: grid;
+}
+
+.kitchen-block__name-dish-block {
+	display              : grid;
+	grid-template-columns: auto auto;
+}
+
+.kitchen-block__name-dish {
+	width         : 232px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.kitchen-block__weight-dish {
+	height     : 21px;
+	width      : 232px;
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #D5621D;
+}
+
+.kitchen-block__describe-dish {
+	height     : auto;
+	width      : 351px;
+	font-family: Stolzl;
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #fff;
+}
+
+.kitchen-block__cost-dish {
+	font-family    : 'Gotham Pro';
+	font-style     : normal;
+	font-weight    : 700;
+	font-size      : 14px;
+	line-height    : 150%;
+	text-align     : center;
+	letter-spacing : 0.05em;
+	text-transform : uppercase;
+	color          : #FFFFFF;
+	box-sizing     : border-box;
+	display        : flex;
+	flex-direction : row;
+	justify-content: center;
+	align-items    : center;
+	padding        : 10px 20px 7px;
+	gap            : 10px;
+	width          : 84px;
+	height         : 38px;
+	border         : 2px solid #D5621D;
+	border-radius  : 5px;
+}
+
+.kitchen-block__control {
+	display      : grid;
+	width        : 1000px;
+	justify-items: center;
+}
+
+.kitchen-block__control-left {
+	display      : grid;
+	padding      : 15px;
+	gap          : 10px;
+	position     : absolute;
+	top          : 45%;
+	left         : -140px;
+	background   : #d5621d;
+	border-radius: 5px;
+	justify-items: center;
+	align-items  : center;
+	cursor       : pointer;
+}
+
+.kitchen-block__control-right {
+	background   : #d5621d;
+	border-radius: 5px;
+	justify-items: center;
+	align-items  : center;
+	width        : 50px;
+	height       : 50px;
+	display      : grid;
+	gap          : 10px;
+	position     : absolute;
+	top          : 45%;
+	right        : -50px;
+	cursor       : pointer;
+}
+
+.kitchen-block__button-all-menu {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	width         : 171px;
+	display       : grid;
+	height        : 57px;
+	background    : #d5621d;
+	border-radius : 5px;
+	justify-items : center;
+	align-items   : center;
+	margin-top    : 96px;
+}

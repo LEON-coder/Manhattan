@@ -1,30 +1,14 @@
 @import url(./partials/header.scss);
 @import url(./partials/main-block-anounce.scss);
+@import url(./partials/kitchen-block.scss);
+@import url(./partials/events_and_turists-block.scss);
 
-@font-face {
-	font-family: "SF Pro Display";
-	font-style : bold;
-	src        : local("../../build/fonts/sf-pro-display/SF-Pro-Display-Bold.woff");
-}
-
-@font-face {
-	font-family: "Barlow";
-	font-style : bold;
-	src        : local("../../app/fonts/Barlow/Barlow-Bold.ttf");
-}
-
-@font-face {
-	font-family: "SF Pro Display";
-	font-style : normal;
-	src        : local("app/fonts/sf-pro-display/SFProDisplay-Regular.woff2");
-}
 
 @font-face {
 	font-family: "Staatliches-Regular";
 	font-style : normal;
-	src        : local("../../app/fonts/Staatliches/Staatliches-Regular.woff2");
-	src        : local("../../app/fonts/Staatliches/Staatliches-Regular.woff");
-	src        : local("../../app/fonts/Staatliches/Staatliches-Regular.ttf");
+	src        : local("/app/fonts/Staatliches/Staatliches-Regular.ttf");
+
 	font-weight: 400;
 }
 
@@ -36,11 +20,7 @@
 	font-weight: 400;
 }
 
-@font-face {
-	font-family: "Gotham Pro";
-	font-style : normal;
-	src        : local("../../../../app/fonts/Gotham Pro/gothampro_medium.ttf");
-}
+
 
 body {
 	font-family  : "Stolzl", "Gotham Pro", "Staatliches-Regular";

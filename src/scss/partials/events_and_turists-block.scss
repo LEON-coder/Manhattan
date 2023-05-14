@@ -1,0 +1,84 @@
+.events_and_turists-block__wrap {
+	display              : grid;
+	height               : 560px;
+	width                : 1296px;
+	border-radius        : 5px;
+	grid-template-columns: repeat(3, 416px);
+	justify-items        : center;
+	margin-top           : 150px;
+}
+
+.block_events__link-events {
+	width         : auto;
+	height        : 21px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210e09;
+	padding       : 10px 20px 7px;
+	background    : #fff;
+	border-radius : 5px;
+}
+
+.block_events {
+	display      : grid;
+	justify-items: center;
+}
+
+.block_events__header__events {
+	width         : 416px;
+	height        : 60px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.block_events__describe {
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	text-align : center;
+	color      : #fff;
+	display    : grid;
+	height     : 301px;
+	width      : 376px;
+}
+
+.block_poster {
+	width        : 416px;
+	height       : 560px;
+	border-radius: 5px;
+}
+
+.block_events__link {
+	border        : 2px solid #d5621d;
+	border-radius : 5px;
+	display       : grid;
+	justify-self  : center;
+	align-self    : center;
+	width         : 96px;
+	height        : 21px;
+	font-family   : 'Stolzl';
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+	padding       : 15px 30px;
+}
