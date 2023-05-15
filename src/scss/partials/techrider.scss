@@ -1,0 +1,138 @@
+.techrider {
+	display      : grid;
+	justify-items: center;
+	width        : 100%;
+}
+
+
+.techrider__wrap {
+	display      : grid;
+	width        : 1078px;
+	height       : 906px;
+	justify-items: center;
+}
+
+
+
+.techrider-top-link {
+	width         : 210px;
+	height        : 21px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210e09;
+	display       : grid;
+	padding       : 10px 20px 7px;
+	background    : #fff;
+	border-radius : 5px;
+	margin-top    : 150px;
+	justify-items : center;
+	align-items   : center;
+}
+
+.techrider__header {
+	display       : grid;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	height        : 60px;
+	width         : 623px;
+}
+
+.techrider__block-person {
+	display              : grid;
+	grid-template-columns: auto auto;
+}
+
+.techrider__opening-menu {
+	margin-right: 134px;
+}
+
+.opening-menu {
+	font-family          : "Gotham Pro";
+	font-style           : normal;
+	font-weight          : 700;
+	font-size            : 18px;
+	line-height          : 150%;
+	letter-spacing       : 0.05em;
+	text-transform       : uppercase;
+	color                : #fff;
+	display              : grid;
+	padding              : 20px 40px;
+	gap                  : 10px;
+	width                : 526px;
+	background           : rgba(213, 98, 29, 0.1);
+	border-radius        : 5px;
+	margin-bottom        : 20px;
+	grid-template-columns: auto auto;
+}
+
+.arrow-up {
+	display     : grid;
+	justify-self: flex-end;
+}
+
+
+.name-produser {
+	display       : grid;
+	width         : 156px;
+	height        : 42px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.techrider__sound-produsers-block {
+	display: grid;
+}
+
+.techrider__sound-produsers {
+	display              : grid;
+	grid-template-columns: auto auto;
+}
+
+.techrider__sound-produsers_headline {
+	width         : 415px;
+	height        : 96px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 32px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.sound-produser {
+	margin-right : 24px;
+	display      : grid;
+	justify-items: center;
+}
+
+.name-produser:nth-child(2) {
+	width : 115px;
+	height: 42px;
+}
+
+.social-icon:first-child {
+	margin-right: 24px;
+}

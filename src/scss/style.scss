@@ -2,12 +2,14 @@
 @import url(./partials/main-block-anounce.scss);
 @import url(./partials/kitchen-block.scss);
 @import url(./partials/events_and_turists-block.scss);
+@import url(./partials/techrider.scss);
+@import url(./partials/contacts.scss);
 
 
 @font-face {
 	font-family: "Staatliches-Regular";
 	font-style : normal;
-	src        : local("/app/fonts/Staatliches/Staatliches-Regular.ttf");
+	src        : local("app/fonts/Staatliches/Staatliches-Regular.ttf");
 
 	font-weight: 400;
 }
@@ -15,8 +17,8 @@
 @font-face {
 	font-family: "Stolzl";
 	font-style : normal;
-	src        : local("../../app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
-		local("../../app/fonts/Stolzl/stolzl_medium.otf");
+	src        : local("app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
+		local("app/fonts/Stolzl/stolzl_medium.otf");
 	font-weight: 400;
 }
 

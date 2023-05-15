@@ -1,0 +1,78 @@
+.contacts {
+	display      : grid;
+	width        : 100%;
+	justify-items: center;
+}
+
+.contacts__wrap {
+	margin-top   : 150px;
+	display      : grid;
+	justify-items: center;
+}
+
+.contacts__top-link {
+	width         : 210px;
+	height        : 21px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210E09;
+	display       : grid;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	background    : #FFFFFF;
+	border-radius : 5px;
+}
+
+.contacts__headline {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.contacts__block-map-contacts {
+	display              : grid;
+	grid-template-columns: auto auto;
+}
+
+.block-adress {}
+
+.adress-headline {
+	width         : 316px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.adress-location {
+	width      : 316px;
+	height     : 42px;
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #FFFFFF;
+}
+
+.contacts__map {
+	margin-left: 24px;
+}
