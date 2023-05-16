@@ -29,6 +29,11 @@
 	border-radius : 5px;
 }
 
+.management-block {
+	display   : grid;
+	margin-top: 45px;
+}
+
 .contacts__headline {
 	font-family   : "Gotham Pro";
 	font-style    : normal;
@@ -45,11 +50,23 @@
 .contacts__block-map-contacts {
 	display              : grid;
 	grid-template-columns: auto auto;
+	margin-top           : 80px;
 }
 
-.block-adress {}
+.block-adress,
+.block-phone,
+.operating-mode-block {
+	display   : grid;
+	width     : 316px;
+	height    : 89px;
+	margin-top: 35px;
+}
 
-.adress-headline {
+
+
+.adress-headline,
+.phone-headline,
+.operating-mode-headline {
 	width         : 316px;
 	height        : 27px;
 	font-family   : 'Gotham Pro';
@@ -62,9 +79,51 @@
 	color         : #FFFFFF;
 }
 
-.adress-location {
+.adress-location,
+.operating-mode-during,
+.phone-number {
 	width      : 316px;
 	height     : 42px;
+	font-family: Stolzl;
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #fff;
+	margin-top : 20px;
+}
+
+.contacts__map {
+	margin-left: 24px;
+}
+
+.contacts__address {
+	height       : 656px;
+	width        : 416px;
+	padding-left : 50px;
+	background   : rgba(213, 98, 29, 0.1);
+	border       : 2px solid #D5621D;
+	border-radius: 5px;
+}
+
+.director__headline,
+.art-director__headline {
+	width         : 316px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.director__name,
+.art-director__name {
+	width      : 316px;
+	height     : 21px;
 	font-family: 'Stolzl';
 	font-style : normal;
 	font-weight: 400;
@@ -73,6 +132,17 @@
 	color      : #FFFFFF;
 }
 
-.contacts__map {
-	margin-left: 24px;
+
+.line {
+	display   : grid;
+	opacity   : 0.5;
+	border    : 1px solid #fff;
+	margin-top: 45px;
+	height    : 0px;
+	width     : 316px;
+}
+
+.art-director-block {
+	display   : grid;
+	margin-top: 35px;
 }
