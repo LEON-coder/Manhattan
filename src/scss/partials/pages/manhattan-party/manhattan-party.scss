@@ -1,0 +1,137 @@
+.manhattan-party {
+	display: grid;
+}
+
+.manhattan-party__wrap {
+	display      : grid;
+	width        : 1296px;
+	justify-items: center;
+}
+
+.manhattan-party__link {
+	width         : 210px;
+	height        : 21px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210e09;
+	padding       : 10px 20px 7px;
+	background    : #fff;
+	border-radius : 5px;
+	margin-top    : 55px;
+}
+
+.manhattan-party__post {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.manhattan-party__block-posters {
+	display              : grid;
+	grid-template-columns: repeat(4, 306px);
+	gap                  : 24px;
+	margin-top           : 80px;
+}
+
+.manhattan-party-poster {
+	position: absolute;
+	top     : 0;
+	left    : 0;
+}
+
+.data-advise,
+.time-advise,
+.point {
+	width         : 81px;
+	height        : 19px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	display       : grid;
+	align-self    : center;
+}
+
+.point {
+	width        : 4px;
+	height       : 4px;
+	background   : #fff;
+	border-radius: 5px;
+	margin-left  : 8px;
+	margin-right : 18px;
+}
+
+
+
+.block-poster {
+	display : grid;
+	width   : 306px;
+	height  : 350px;
+	position: relative;
+}
+
+.block-poster__advise {
+	display              : grid;
+	grid-template-columns: auto auto auto;
+	padding              : 8px 15px;
+	gap                  : 8px;
+	width                : 174px;
+	height               : 35px;
+	background           : #d5621d;
+	border-radius        : 5px;
+	z-index              : 6;
+	margin-top           : 188px;
+	margin-left          : 35px;
+}
+
+.headline-advise-in-clube {
+	width         : 236px;
+	height        : 27px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	z-index       : 6;
+	margin-left   : 35px;
+}
+
+.manhattan-party__link_poster-advise {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	width         : 84px;
+	height        : 38px;
+	border        : 2px solid #d5621d;
+	border-radius : 5px;
+	z-index       : 6;
+	margin-left   : 35px;
+	align-self    : center;
+	display       : grid;
+}
