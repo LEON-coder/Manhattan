@@ -1,0 +1,152 @@
+@font-face {
+	font-family: "Stolzl";
+	font-style : normal;
+	src        : local("../../../../../app/fonts/Stolzl/Stolzl-Regular.woff"), local("../../../../../app/fonts/Stolzl/stolzl_regular.otf");
+	font-weight: 400;
+}
+
+
+
+
+.corporate_parties {
+	display: grid;
+}
+
+.corporate_parties__wrap {
+	display      : grid;
+	justify-items: center;
+}
+
+.corporate_parties__block-header {
+	display      : grid;
+	justify-items: center;
+	margin-top   : 55px;
+}
+
+
+.corporate_parties__link-events {
+	width         : 220px;
+	height        : 21px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210E09;
+	display       : grid;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	background    : #FFFFFF;
+	border-radius : 5px;
+	width         : 220px;
+	height        : 21px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210E09;
+}
+
+.corporate_parties__headline {
+	display       : grid;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.corporate_parties__central-text {
+	width         : 214px;
+	height        : 36px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 24px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 100px;
+}
+
+.corporate_parties__block-proposal-menu {
+	display              : grid;
+	grid-template-columns: 376px 376px;
+	margin-top           : 80px;
+}
+
+.proposal_buffet-menu,
+.proposal_banquet-menu {
+	width      : 376px;
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 20px;
+	line-height: 150%;
+	text-align : center;
+	color      : #FFFFFF;
+}
+
+.buffet-proposal-text {
+	width      : 376px;
+	height     : 60px;
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 20px;
+	line-height: 150%;
+	text-align : center;
+	color      : #FFFFFF;
+}
+
+.corporate_parties__block-advances {
+	display      : grid;
+	width        : 636px;
+	margin-top   : 100px;
+	justify-items: center;
+}
+
+.corporate_parties__list {
+	display      : grid;
+	justify-items: center;
+}
+
+.advance {
+	display    : grid;
+	width      : 606px;
+	font-family: Stolzl;
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 18px;
+	line-height: 150%;
+	color      : #fff;
+	margin-top : 10px;
+}
+
+.corporate_parties__block-advances_headline {
+	width         : 187px;
+	height        : 36px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 24px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}

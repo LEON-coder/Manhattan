@@ -1,7 +1,8 @@
-@import url(../../partials/header.scss);
-@import url(../../partials/pages/manhattan-party.scss);
-@import url(../../partials/contacts.scss);
-@import url(../../partials/footer.scss);
+@import url(../../../partials/header.scss);
+@import url(../../../partials/pages/content/corporate_parties.scss);
+
+
+
 
 
 @font-face {
@@ -15,8 +16,7 @@
 @font-face {
 	font-family: "Stolzl";
 	font-style : normal;
-	src        : local("app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
-		local("app/fonts/Stolzl/stolzl_medium.otf");
+	src        : local("../../../../../app/fonts/Stolzl/Stolzl-Regular.woff"), local("../../../../../app/fonts/Stolzl/stolzl_regular.otf");
 	font-weight: 400;
 }
 
