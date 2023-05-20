@@ -1,0 +1,82 @@
+.manhattan-photo {}
+
+.manhattan-photo__block-headline {
+	display   : grid;
+	margin-top: 55px;
+}
+
+.manhattan-photo__link-top {
+	width         : 244px;
+	height        : 21px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210E09;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	background    : #FFFFFF;
+	border-radius : 5px;
+
+}
+
+.gallery-text {
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.manhattan-photo__block-pictures {
+	display              : grid;
+	grid-template-columns: auto auto auto;
+	gap                  : 24px;
+}
+
+.manhattan-picture {
+	position          : relative;
+	display           : grid;
+	width             : 306px;
+	height            : 350px;
+	justify-items     : center;
+	align-items       : center;
+	transition        : 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition   : 0.5s;
+	-ms-transition    : 0.5s;
+	-o-transition     : 0.5s;
+}
+
+.manhattan-picture:hover .manhattan-background-pic {
+	display   : grid;
+	background: #210E09;
+	opacity   : 0.1;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.manhattan-background-pic {
+	display   : grid;
+	width     : 306px;
+	height    : 350px;
+	transition: 1s ease;
+}
+
+.manhattan-picture:hover .zoom {
+	display   : grid;
+	transition: 1s ease;
+}
+
+.zoom {
+	display : none;
+	position: absolute;
+
+}

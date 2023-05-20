@@ -123,12 +123,14 @@
 .corporate_parties__list {
 	display      : grid;
 	justify-items: center;
+	margin-top   : 60px;
 }
 
 .advance {
+	list-style : url('../../../../../app/img/corporate_parties/buffet-menu/list-style-rectangle.svg');
 	display    : grid;
 	width      : 606px;
-	font-family: Stolzl;
+	font-family: 'Stolzl';
 	font-style : normal;
 	font-weight: 400;
 	font-size  : 18px;

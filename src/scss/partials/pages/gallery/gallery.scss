@@ -1,8 +1,7 @@
 @import url(../../../partials/header.scss);
-@import url(../../../partials/pages/content/corporate_parties.scss);
+@import url(../../pages/gallery/manhattan-photo.scss);
 @import url(../../../partials/contacts.scss);
 @import url(../../../partials/footer.scss);
-
 
 
 
@@ -17,7 +16,8 @@
 @font-face {
 	font-family: "Stolzl";
 	font-style : normal;
-	src        : local("../../../../../app/fonts/Stolzl/Stolzl-Regular.woff"), local("../../../../../app/fonts/Stolzl/stolzl_regular.otf");
+	src        : local("app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
+		local("app/fonts/Stolzl/stolzl_medium.otf");
 	font-weight: 400;
 }
 
