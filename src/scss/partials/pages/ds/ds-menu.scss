@@ -1,0 +1,92 @@
+.ds-menu {
+	display: grid;
+}
+
+
+.ds-menu__wrap {
+	display   : grid;
+	width     : 1305px;
+	margin-top: 100px;
+}
+
+.ds-menu-link {
+	display       : grid;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	gap           : 10px;
+	width         : 171px;
+	height        : 57px;
+	background    : #d5621d;
+	border-radius : 5px;
+	align-items   : center;
+}
+
+.ds-menu__loudspeakers {
+	box-sizing   : border-box;
+	width        : 566px;
+	height       : 209px;
+	border       : 1px dashed #9747ff;
+	border-radius: 5px;
+	margin-top   : 100px;
+	display      : grid;
+	justify-items: center;
+	align-items  : center;
+}
+
+.loudspeaker {
+	display      : grid;
+	width        : 526px;
+	height       : 67px;
+	background   : rgba(213, 98, 29, 0.1);
+	border-radius: 5px;
+}
+
+.loudspeaker:hover {
+	background   : #D5621D;
+	border-radius: 5px;
+}
+
+.loudspeaker__wrap {
+	position: relative;
+	width   : 446px;
+	height  : 27px;
+}
+
+
+.loudspeaker__text {
+	width         : 163px;
+	height        : 27px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	padding-top   : 20px;
+	padding-left  : 40px;
+}
+
+.loudspeaker__arrow {
+	position     : absolute;
+	height       : 25px;
+	width        : 25px;
+	left         : 461px;
+	top          : 20px;
+	border-radius: 0;
+}
+
+header {
+	display      : grid;
+	justify-items: center;
+	margin-top   : 100px;
+	width        : 100%;
+}

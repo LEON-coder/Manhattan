@@ -1,7 +1,7 @@
 @import url(../../../partials/header.scss);
-@import url(../../../partials/pages/manhattan-party/manhattan-party.scss);
-@import url(../../contacts.scss);
-@import url(../../footer.scss);
+@import url(../../pages/ds/ds-menu.scss);
+@import url(../../pages/ds/booking.scss);
+
 
 
 @font-face {
@@ -35,7 +35,6 @@ body {
 }
 
 .wrapper {
-	display      : grid;
-	width        : 1305px;
-	justify-items: center;
+	display: grid;
+	width  : 1305px;
 }
