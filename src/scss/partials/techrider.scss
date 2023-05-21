@@ -48,11 +48,13 @@
 	color         : #fff;
 	height        : 60px;
 	width         : 623px;
+	margin-top    : 40px;
 }
 
 .techrider__block-person {
 	display              : grid;
 	grid-template-columns: auto auto;
+	margin-top           : 80px;
 }
 
 .techrider__opening-menu {
@@ -60,22 +62,84 @@
 }
 
 .opening-menu {
-	font-family          : "Gotham Pro";
-	font-style           : normal;
-	font-weight          : 700;
-	font-size            : 18px;
-	line-height          : 150%;
-	letter-spacing       : 0.05em;
-	text-transform       : uppercase;
-	color                : #fff;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	height        : 67px;
+	display       : grid;
+	padding-right : 40px;
+	padding-top   : 0px;
+	padding-left  : 40px;
+	padding-bottom: 0;
+	width         : 526px;
+	background    : rgba(213, 98, 29, 0.1);
+	border-radius : 5px;
+	margin-bottom : 20px;
+	transition    : 1s ease;
+	align-items   : center;
+	position      : relative;
+}
+
+.opening-menu-active {
+	display      : grid;
+	margin-bottom: 20px;
+	transition   : 1s ease;
+	align-items  : center;
+	background   : #d5621d;
+	height       : 253px;
+	width        : 526px;
+	border-radius: 5px;
+	padding      : 20px 40px 20px 40px;
+}
+
+.opening-menu__headline {
+	display: grid;
+}
+
+.opening-menu__headline-block {
 	display              : grid;
-	padding              : 20px 40px;
-	gap                  : 10px;
-	width                : 526px;
-	background           : rgba(213, 98, 29, 0.1);
-	border-radius        : 5px;
-	margin-bottom        : 20px;
 	grid-template-columns: auto auto;
+	align-items          : flex-start;
+	position             : sticky;
+}
+
+.opening-menu:hover .opening-menu__headline-block {
+	display              : grid;
+	grid-template-columns: auto auto;
+	align-items          : flex-start;
+	position             : sticky;
+}
+
+.showed-menu {
+	display   : none;
+	list-style: none;
+}
+
+.show-menu-item {
+	display           : grid;
+	transition        : 2s;
+	-webkit-transition: 2s;
+	-moz-transition   : 2s;
+	-ms-transition    : 2s;
+	-o-transition     : 2s;
+	margin-top        : 20px;
+}
+
+.showed-item {
+	width      : 415px;
+	height     : auto;
+	font-family: Stolzl;
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #fff;
+	margin-top : 20px;
 }
 
 .arrow-up {
