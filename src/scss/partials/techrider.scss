@@ -70,18 +70,18 @@
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	color         : #fff;
-	height        : 67px;
+	height        : 27px;
 	display       : grid;
 	padding-right : 40px;
-	padding-top   : 0px;
+	padding-top   : 20px;
 	padding-left  : 40px;
-	padding-bottom: 0;
+	padding-bottom: 20px;
 	width         : 526px;
 	background    : rgba(213, 98, 29, 0.1);
 	border-radius : 5px;
 	margin-bottom : 20px;
 	transition    : 1s ease;
-	align-items   : center;
+	align-items   : baseline;
 	position      : relative;
 }
 
@@ -89,7 +89,7 @@
 	display      : grid;
 	margin-bottom: 20px;
 	transition   : 1s ease;
-	align-items  : center;
+	align-items  : baseline;
 	background   : #d5621d;
 	height       : 253px;
 	width        : 526px;
@@ -118,6 +118,19 @@
 .showed-menu {
 	display   : none;
 	list-style: none;
+}
+
+.showed-menu-active {
+	display: grid;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+	display: grid;
 }
 
 .show-menu-item {
