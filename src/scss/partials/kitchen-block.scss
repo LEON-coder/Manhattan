@@ -40,10 +40,12 @@
 	height               : 111px;
 	width                : 486px;
 	grid-template-columns: auto auto;
+	justify-content      : space-between;
 }
 
 .kitchen-block__dish-block-text {
-	display: grid;
+	display   : grid;
+	text-align: initial;
 }
 
 .kitchen-block__name-dish-block {
@@ -72,18 +74,21 @@
 	font-weight: 400;
 	font-size  : 14px;
 	line-height: 150%;
-	color      : #D5621D;
+	color      : #d5621d;
+	text-align : initial;
 }
 
 .kitchen-block__describe-dish {
-	height     : auto;
-	width      : 351px;
-	font-family: Stolzl;
-	font-style : normal;
-	font-weight: 400;
-	font-size  : 14px;
-	line-height: 150%;
-	color      : #fff;
+	height      : auto;
+	width       : 351px;
+	font-family : Stolzl;
+	font-style  : normal;
+	font-weight : 400;
+	font-size   : 14px;
+	line-height : 150%;
+	color       : #fff;
+	justify-self: flex-start;
+	text-align  : left;
 }
 
 .kitchen-block__cost-dish {
@@ -107,6 +112,7 @@
 	height         : 38px;
 	border         : 2px solid #D5621D;
 	border-radius  : 5px;
+	cursor         : pointer;
 }
 
 .kitchen-block__control {
@@ -162,4 +168,5 @@
 	justify-items : center;
 	align-items   : center;
 	margin-top    : 96px;
+	cursor        : pointer;
 }
