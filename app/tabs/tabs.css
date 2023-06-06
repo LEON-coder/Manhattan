@@ -40,11 +40,10 @@
 
 /* Стиль содержимого вкладки */
 .tabcontent {
-	display      : none;
 	width        : 416px;
 	padding      : 0px 0px;
 	border-radius: 0px 0px 5px 5px;
-	height       : 502px;
+	height       : 0;
 }
 
 
