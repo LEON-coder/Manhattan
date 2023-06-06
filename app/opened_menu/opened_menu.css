@@ -75,7 +75,7 @@ details[open] summary {
 }
 
 details[open] summary:after {
-	background       : url(../../app/img/techrider/techrider__sound-produsers/ep_arrow-up-bold.svg);
+	background       : url('app/img/techrider/techrider__sound-produsers/ep_arrow-up-bold.svg');
 	background-repeat: no-repeat;
 }
 
@@ -83,17 +83,6 @@ summary:hover {
 	background   : #D5621D;
 	border-radius: 5px;
 	height       : 67px;
-}
-
-a {
-	color          : inherit;
-	font-weight    : 600;
-	text-decoration: none;
-	box-shadow     : 0 1px 0 0;
-}
-
-a:hover {
-	box-shadow: 0 3px 0 0;
 }
 
 code {
