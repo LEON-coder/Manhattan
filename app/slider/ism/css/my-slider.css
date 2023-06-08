@@ -269,25 +269,7 @@ p.ism-badge a.ism-link:hover {
   }
 }
 
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 @-webkit-keyframes slidein {
   0% {
@@ -460,18 +442,6 @@ p.ism-badge a.ism-link:hover {
   background-position: center;
 }
 
-#my-slider .ism-pause-button {
-  width           : 50px;
-  height          : 50px;
-  background-size : 16px 16px;
-  top             : 50%;
-  margin-top      : -25px;
-  border-radius   : 25px;
-  margin-left     : -25px;
-  color           : #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-
-}
 
 #my-slider .ism-pause-button.ism-play {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAs6AAALOgFkf1cNAAACy0lEQVR42uWbS2hUVxyHv78PLKKiFgXBiIgvBEVKwZWL4kJrF7oQCSpoAlYkuhCyq4hQ2goqSBFBsNBCoXShbgp15XsTQSGKqKj1QdTYFCVQiuDic5FcGkQhj0nm3vl/6+Ge+X3zO2fumTkXhoi6S51NVtQbapfallVAh//Toc7KLED1jbpPnZJVQMF99fPMAgqOqZ9mFqD6UP06s4CC8+r0MucZN8rX/wJ4pu5VP8nYgIHcU5dna8BAFgM31e8rvUiOoAHvt2FHZgEFf6iTs0yBD/EV0K3uVidkFAAwFTgB3FKXZBRQsBS4q+5XZ2YUUPAtcEVtzioAYBnwm/q7OimjgILNwAt1Z1YBADOAk+ptdUFGAQDRPy0equ213GBVRcBADgOX1Y1ZBQAsB86qP4/0BqqqAgq292+3W7IKAJgNnFI71XkZBRQ5VgBP1DZ1WjYBAzkOXFLXZhUAsBI4p55Qx2cUULAbeKxuyyoAYC7wi3pdnZNRQJHzs/5FslWdmk1AwUTgJ+Ciui6jAACBWcDfGQX0At8A8yPiBsCEROHPA80R0ZNtEXwKtETEmvfDZ2jAIeDHiHjxsRc0ogCBl8DGiOjIdiv8H3AQaBpM+EZrwFVgU0S8zLYd7gLaImL1UMM3QgOOAUcjomu4F6iqgH+AzRFxoRabhCrxlr6/zppqEb5qDbgGbIiI7lpvE8vOc6A9IlbVOnwVGnAS+CEinozWAGUV8BrYGhF/jvZAZZwCh4B5YxG+bA3oBNZHxPOxHLQMDegG9kfEyrEOX4YG/AociIhH9XoD9RLQC7RGxJl6168eU+Aofb/JnSnB9BvTBtwBvhzN7/SyNqAH+C4ilpUt/LAY4lnh0+pCGolBCuhVt9CIDPKhqco8WVrLRfAvYG1EPKjSB1qLRfAVcARYVLXwtZgC5+pxxL3eAq6p/47kaFrVBexRmxolzzsZ+iOF4pXTWQAAAABJRU5ErkJggg==);
@@ -491,13 +461,6 @@ p.ism-badge a.ism-link:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#my-slider .ism-radios li.active label {
-  background-color: rgba(255, 255, 255, 1.0);
-}
-
-#my-slider .ism-radios label:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
 
 
 /* SLIDES */
@@ -874,4 +837,230 @@ p.ism-badge a.ism-link:hover {
   justify-items : center;
   align-items   : center;
   margin-top    : 96px;
+}
+
+@media screen and (max-width:1024px) {
+  #my-slider {
+   width                : 700px;
+   -webkit-border-radius: 5px;
+   border-radius        : 5px;
+   height               : 1050px;
+ }
+
+  #my-slider .ism-button-next {
+    background-image   : url(../../../slider/ep_arrow-right.svg);
+    background-repeat  : no-repeat;
+    right              : 0px;
+    background-position: center;
+  }
+
+  .kitchen-block__button-all-menu {
+    font-family   : "Gotham Pro";
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 18px;
+    line-height   : 150%;
+    text-align    : center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color         : #fff;
+    width         : 171px;
+    display       : grid;
+    height        : 57px;
+    background    : #d5621d;
+    border-radius : 5px;
+    justify-items : center;
+    align-items   : center;
+    position      : absolute;
+    top           : 90%;
+    left          : 13%;
+  }
+
+  .ism-slider .ism-slides {
+    list-style         : none;
+    position           : absolute;
+    height             : 100%;
+    top                : 0;
+    padding            : 0 !important;
+    margin-top         : 0;
+    margin-bottom      : 0;
+    z-index            : 1;
+    width              : 820%;
+    perspective        : 1000px;
+    backface-visibility: hidden;
+    transform          : translateX(0px);
+  }
+
+
+  .kitchen-block {
+    width          : 200%;
+    display        : grid;
+    justify-content: center;
+  }
+
+  .kitchen-block__wrap {
+    display      : grid;
+    height       : auto;
+    width        : 90%;
+    border-radius: 0;
+    margin-top   : 40px;
+    position     : relative;
+    justify-items: center;
+  }
+
+  .kitchen-block__header {
+    font-family   : 'Gotham Pro';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 40px;
+    line-height   : 150%;
+    text-align    : center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color         : #FFFFFF;
+    margin-left   : 160px;
+    margin-right  : auto;
+  }
+
+  .kitchen-block__block-dishes {
+    display              : grid;
+    height               : 612px;
+    width                : 1166px;
+    grid-template-columns: repeat(2, auto);
+    margin-top           : 80px;
+  }
+
+  .block_events__header__events {
+    width         : 416px;
+    height        : 60px;
+    font-family   : "Gotham Pro";
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 40px;
+    line-height   : 150%;
+    text-align    : center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color         : #fff;
+    margin-top    : 50px;
+  }
+
+  .block_poster {
+    width        : 416px;
+    height       : 560px;
+    border-radius: 5px;
+    margin-top   : 60px;
+  }
+
+  .block_events {
+    display      : grid;
+    justify-items: center;
+    margin-top   : 60px;
+  }
+
+  .block_events__describe {
+    font-family: Stolzl;
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 150%;
+    text-align : center;
+    color      : #fff;
+    display    : grid;
+    height     : 230px;
+    width      : 376px;
+  }
+
+  .techrider-top-link {
+    width         : 210px;
+    height        : 21px;
+    font-family   : "Gotham Pro";
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 14px;
+    line-height   : 150%;
+    text-align    : center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color         : #210e09;
+    display       : grid;
+    padding       : 10px 20px 7px;
+    background    : #fff;
+    border-radius : 5px;
+    margin-top    : 100px;
+    justify-items : center;
+    align-items   : center;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    margin    : auto;
+    margin-top: 100px;
+    height    : 100%;
+    width     : 100%;
+  }
+
+  .container {
+    margin    : auto;
+    margin-top: 20px;
+    height    : 100%;
+    width     : 90%;
+  }
+
+  .block_events {
+    display      : grid;
+    justify-items: center;
+    margin-top   : 0px;
+  }
+
+  .techrider-top-link {
+    width         : 210px;
+    height        : 21px;
+    font-family   : "Gotham Pro";
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 14px;
+    line-height   : 150%;
+    text-align    : center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color         : #210e09;
+    display       : grid;
+    padding       : 10px 20px 7px;
+    background    : #fff;
+    border-radius : 5px;
+    margin-top    : 100px;
+    justify-items : center;
+    align-items   : center;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #my-slider {
+    width                : 490px;
+    -webkit-border-radius: 5px;
+    border-radius        : 5px;
+    height               : 1050px;
+    display              : none;
+  }
+
+  .block_poster {
+    width        : 80%;
+    height       : 560px;
+    border-radius: 5px;
+    margin-top   : 60px;
+  }
+
+  .block_events__header__events {
+    width     : 90%;
+    height    : 60px;
+    margin-top: 50px;
+  }
+
+  .block_events__describe {
+    height: 230px;
+    width : 90%;
+  }
 }
