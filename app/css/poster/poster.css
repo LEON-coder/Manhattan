@@ -1,0 +1,647 @@
+@font-face {
+	font-family: "Staatliches-Regular";
+	font-style : normal;
+	src        : local("app/fonts/Staatliches/Staatliches-Regular.ttf");
+
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Stolzl";
+	font-style : normal;
+	src        : local("app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
+		local("app/fonts/Stolzl/stolzl_medium.otf");
+	font-weight: 400;
+}
+
+
+
+body {
+	font-family  : "Stolzl", "Gotham Pro", "Staatliches-Regular";
+	background   : #210e09;
+	display      : grid;
+	justify-items: center;
+}
+
+* {
+	margin : 0;
+	padding: 0;
+}
+
+.wrapper {
+	display      : grid;
+	width        : 1305px;
+	justify-items: center;
+}
+
+header {
+	display      : grid;
+	width        : 1296px;
+	justify-items: center;
+}
+
+.nav {
+	display              : grid;
+	grid-template-columns: repeat(8, auto);
+	align-items          : center;
+	margin-top           : 30px;
+}
+
+.nav__logo {
+	height: 40px;
+	width : 157.8947296142578px;
+}
+
+.nav__list {
+	display              : grid;
+	grid-template-columns: repeat(6, auto);
+	margin-left          : 211px;
+	margin-right         : 189px;
+}
+
+.nav__item {
+	margin-right: 30px;
+	list-style  : none;
+}
+
+.nav__link {
+	list-style     : none;
+	font-family    : Stolzl;
+	font-style     : normal;
+	font-weight    : 400;
+	font-size      : 14px;
+	line-height    : 150%;
+	color          : #fff;
+	text-decoration: none;
+}
+
+.nav__item:nth-child(1) {
+	width: 60px;
+}
+
+.nav__item:nth-child(2) {
+	width: 43px;
+}
+
+.nav__item:nth-child(3) {
+	width: 57px;
+}
+
+.nav__item:nth-child(4) {
+	width: 124px;
+}
+
+.nav__item:nth-child(5) {
+	width: 62px;
+}
+
+.nav__item:nth-child(6) {
+	width: 63px;
+}
+
+.header__wrap {
+	width                : 1305px;
+	display              : grid;
+	justify-items        : center;
+	grid-template-columns: 6fr;
+}
+
+.nav__booking-button {
+	height         : 21px;
+	font-family    : "Stolzl";
+	font-style     : normal;
+	font-weight    : 400;
+	font-size      : 14px;
+	line-height    : 150%;
+	letter-spacing : 0.05em;
+	text-transform : uppercase;
+	color          : #fff;
+	padding        : 15px 30px;
+	border         : 2px solid #d5621d;
+	border-radius  : 5px;
+	display        : grid;
+	text-decoration: none;
+}
+
+.manhattan-party {
+	display: grid;
+}
+
+.manhattan-party__wrap {
+	display      : grid;
+	width        : 1296px;
+	justify-items: center;
+}
+
+.manhattan-party__link {
+	width         : 210px;
+	height        : 21px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210e09;
+	padding       : 10px 20px 7px;
+	background    : #fff;
+	border-radius : 5px;
+	margin-top    : 55px;
+}
+
+.manhattan-party__post {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.manhattan-party__block-posters {
+	display              : grid;
+	grid-template-columns: repeat(4, 306px);
+	gap                  : 24px;
+	margin-top           : 80px;
+}
+
+.manhattan-party-poster {
+	position: absolute;
+	top     : 0;
+	left    : 0;
+}
+
+.data-advise,
+.time-advise,
+.point {
+	width         : 81px;
+	height        : 19px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	display       : grid;
+	align-self    : center;
+}
+
+.point {
+	width        : 4px;
+	height       : 4px;
+	background   : #fff;
+	border-radius: 5px;
+	margin-left  : 8px;
+	margin-right : 18px;
+}
+
+
+
+.block-poster {
+	display : grid;
+	width   : 306px;
+	height  : 350px;
+	position: relative;
+}
+
+.block-poster__advise {
+	display              : grid;
+	grid-template-columns: auto auto auto;
+	padding              : 8px 15px;
+	gap                  : 8px;
+	width                : 174px;
+	height               : 35px;
+	background           : #d5621d;
+	border-radius        : 5px;
+	z-index              : 6;
+	margin-top           : 188px;
+	margin-left          : 35px;
+}
+
+.headline-advise-in-clube {
+	width         : 236px;
+	height        : 27px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	z-index       : 6;
+	margin-left   : 35px;
+}
+
+.manhattan-party__link_poster-advise {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	width         : 84px;
+	height        : 38px;
+	border        : 2px solid #d5621d;
+	border-radius : 5px;
+	z-index       : 6;
+	margin-left   : 35px;
+	align-self    : center;
+	display       : grid;
+}
+
+.contacts {
+	display      : grid;
+	width        : 100%;
+	justify-items: center;
+}
+
+.contacts__wrap {
+	margin-top   : 150px;
+	display      : grid;
+	justify-items: center;
+}
+
+.contacts__map {
+	height       : 656px;
+	width        : 856px;
+	border-radius: 5px;
+}
+
+.contacts__top-link {
+	width         : 210px;
+	height        : 21px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210E09;
+	display       : grid;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	background    : #FFFFFF;
+	border-radius : 5px;
+}
+
+.management-block {
+	display   : grid;
+	margin-top: 45px;
+}
+
+.contacts__headline {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.contacts__block-map-contacts {
+	display              : grid;
+	grid-template-columns: auto auto;
+	margin-top           : 80px;
+}
+
+.block-adress,
+.block-phone,
+.operating-mode-block {
+	display   : grid;
+	width     : 316px;
+	height    : 89px;
+	margin-top: 35px;
+}
+
+
+
+.adress-headline,
+.phone-headline,
+.operating-mode-headline {
+	width         : 316px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.adress-location,
+.operating-mode-during,
+.phone-number {
+	width      : 316px;
+	height     : 42px;
+	font-family: Stolzl;
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #fff;
+	margin-top : 20px;
+}
+
+.contacts__map {
+	margin-left: 24px;
+}
+
+.contacts__address {
+	height       : 656px;
+	width        : 416px;
+	padding-left : 50px;
+	background   : rgba(213, 98, 29, 0.1);
+	border       : 2px solid #D5621D;
+	border-radius: 5px;
+}
+
+.director__headline,
+.art-director__headline {
+	width         : 316px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.director__name,
+.art-director__name {
+	width      : 316px;
+	height     : 21px;
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #FFFFFF;
+}
+
+
+.line {
+	display   : grid;
+	opacity   : 0.5;
+	border    : 1px solid #fff;
+	margin-top: 45px;
+	height    : 0px;
+	width     : 316px;
+}
+
+.art-director-block {
+	display   : grid;
+	margin-top: 35px;
+}
+
+footer {
+	display      : grid;
+	width        : 100%;
+	margin-bottom: 30px;
+}
+
+
+.footer__wrap {
+	display              : grid;
+	grid-template-columns: auto auto;
+	margin-top           : 100px;
+	padding-top          : 30px;
+	justify-content      : space-between;
+	opacity              : 0.5;
+	border-top           : 1px solid #fff;
+}
+
+.footer__copyright,
+.footer__developed {
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #FFFFFF;
+	opacity    : 0.5;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : 150px;
+		margin-right         : 100px;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.wrapper {
+		display      : grid;
+		width        : 100%;
+		justify-items: center;
+	}
+
+	.nav {
+		display              : grid;
+		grid-template-columns: auto;
+		align-items          : center;
+		margin-top           : 0;
+		width                : 100%;
+		position             : relative;
+	}
+
+
+
+	header {
+		display      : grid;
+		width        : 100%;
+		justify-items: center;
+	}
+
+
+	.header__wrap {
+		width                : 90%;
+		display              : grid;
+		grid-template-columns: 6fr;
+		margin-top           : 30px;
+	}
+
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : 0;
+		margin-top           : 50px;
+		margin-right         : 0;
+		justify-items        : center;
+	}
+
+	.nav__booking-button {
+		height               : 21px;
+		font-family          : "Stolzl";
+		font-style           : normal;
+		font-weight          : 400;
+		font-size            : 14px;
+		line-height          : 150%;
+		letter-spacing       : 0.05em;
+		text-transform       : uppercase;
+		color                : #fff;
+		padding              : 15px 30px;
+		border               : 2px solid #d5621d;
+		border-radius        : 5px;
+		display              : grid;
+		text-decoration      : none;
+		margin-top           : 40px;
+		justify-self         : self-end;
+		grid-template-columns: auto auto;
+		position             : absolute;
+		bottom               : -100px;
+		left                 : 40%;
+	}
+
+	.manhattan-party {
+		display   : grid;
+		width     : 100%;
+		margin-top: 130px;
+	}
+
+	.manhattan-party__wrap {
+		display      : grid;
+		width        : 100%;
+		justify-items: center;
+	}
+
+	.manhattan-party__block-posters {
+		display              : grid;
+		grid-template-columns: repeat(2, 306px);
+		gap                  : 24px;
+		margin-top           : 80px;
+	}
+
+	.contacts__block-map-contacts {
+		display              : grid;
+		grid-template-columns: auto auto;
+		margin-top           : 80px;
+		width                : 100%;
+	}
+
+	.contacts__map {
+		margin-left: 24px;
+		display    : none;
+	}
+
+	.contacts__map--1024px {
+		display: grid;
+	}
+
+	.contacts__address {
+		height       : 656px;
+		width        : 365px;
+		padding-left : 50px;
+		background   : rgba(213, 98, 29, 0.1);
+		border       : 2px solid #D5621D;
+		border-radius: 5px;
+		margin-right : 35px;
+	}
+
+	footer {
+		display: grid;
+		width  : 100%;
+	}
+
+	.footer__copyright {
+		font-family : 'Stolzl';
+		font-style  : normal;
+		font-weight : 400;
+		font-size   : 14px;
+		line-height : 150%;
+		color       : #FFFFFF;
+		opacity     : 0.5;
+		padding-left: 80px;
+	}
+
+	.footer__developed {
+		padding-right: 80px;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : auto;
+		margin-right         : auto;
+	}
+
+	.contacts__block-map-contacts {
+		display              : grid;
+		grid-template-columns: auto;
+		margin-top           : 80px;
+		width                : 100%;
+	}
+
+	.contacts__address {
+		height       : 656px;
+		width        : 90%;
+		padding-left : 50px;
+		background   : rgba(213, 98, 29, 0.1);
+		border       : 2px solid #D5621D;
+		border-radius: 5px;
+		margin-right : 0;
+		margin-bottom: 40px;
+	}
+
+	.contacts__map {
+		display: none;
+	}
+
+	.contacts__map--1024px {
+		display: none;
+	}
+
+	.contacts__map--768px {
+		display: grid;
+	}
+
+
+}
+
+@media screen and (max-width: 450px) {
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : 150px;
+		margin-right         : 100px;
+	}
+
+
+}

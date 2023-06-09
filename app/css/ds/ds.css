@@ -1,0 +1,667 @@
+@font-face {
+	font-family: "Staatliches-Regular";
+	font-style : normal;
+	src        : local("app/fonts/Staatliches/Staatliches-Regular.ttf");
+
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Stolzl";
+	font-style : normal;
+	src        : local("app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
+		local("app/fonts/Stolzl/stolzl_medium.otf");
+	font-weight: 400;
+}
+
+
+
+body {
+	font-family  : "Stolzl", "Gotham Pro", "Staatliches-Regular";
+	background   : #210e09;
+	display      : grid;
+	justify-items: center;
+}
+
+* {
+	margin : 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: grid;
+	width  : 1305px;
+}
+
+header {
+	display      : grid;
+	width        : 1296px;
+	justify-items: center;
+}
+
+.nav {
+	display              : grid;
+	grid-template-columns: repeat(8, auto);
+	align-items          : center;
+	margin-top           : 30px;
+}
+
+.nav__logo {
+	height: 40px;
+	width : 157.8947296142578px;
+}
+
+.nav__list {
+	display              : grid;
+	grid-template-columns: repeat(6, auto);
+	margin-left          : 211px;
+	margin-right         : 189px;
+}
+
+.nav__item {
+	margin-right: 30px;
+	list-style  : none;
+}
+
+.nav__link {
+	list-style     : none;
+	font-family    : Stolzl;
+	font-style     : normal;
+	font-weight    : 400;
+	font-size      : 14px;
+	line-height    : 150%;
+	color          : #fff;
+	text-decoration: none;
+}
+
+.nav__item:nth-child(1) {
+	width: 60px;
+}
+
+.nav__item:nth-child(2) {
+	width: 43px;
+}
+
+.nav__item:nth-child(3) {
+	width: 57px;
+}
+
+.nav__item:nth-child(4) {
+	width: 124px;
+}
+
+.nav__item:nth-child(5) {
+	width: 62px;
+}
+
+.nav__item:nth-child(6) {
+	width: 63px;
+}
+
+.header__wrap {
+	width                : 1305px;
+	display              : grid;
+	justify-items        : center;
+	grid-template-columns: 6fr;
+}
+
+.nav__booking-button {
+	height         : 21px;
+	font-family    : "Stolzl";
+	font-style     : normal;
+	font-weight    : 400;
+	font-size      : 14px;
+	line-height    : 150%;
+	letter-spacing : 0.05em;
+	text-transform : uppercase;
+	color          : #fff;
+	padding        : 15px 30px;
+	border         : 2px solid #d5621d;
+	border-radius  : 5px;
+	display        : grid;
+	text-decoration: none;
+}
+
+
+
+.ds-menu {
+	display: grid;
+}
+
+
+.ds-menu__wrap {
+	display   : grid;
+	width     : 1305px;
+	margin-top: 100px;
+}
+
+.ds-menu-link {
+	display       : grid;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	gap           : 10px;
+	width         : 171px;
+	height        : 57px;
+	background    : #d5621d;
+	border-radius : 5px;
+	align-items   : center;
+}
+
+.ds-menu__loudspeakers {
+	box-sizing   : border-box;
+	width        : 566px;
+	height       : 209px;
+	border       : 1px dashed #9747ff;
+	border-radius: 5px;
+	margin-top   : 100px;
+	display      : grid;
+	justify-items: center;
+	align-items  : center;
+}
+
+.loudspeaker {
+	display      : grid;
+	width        : 526px;
+	height       : 67px;
+	background   : rgba(213, 98, 29, 0.1);
+	border-radius: 5px;
+}
+
+.loudspeaker:hover {
+	background   : #D5621D;
+	border-radius: 5px;
+}
+
+.loudspeaker__wrap {
+	position: relative;
+	width   : 446px;
+	height  : 27px;
+}
+
+
+.loudspeaker__text {
+	width         : 163px;
+	height        : 27px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	padding-top   : 20px;
+	padding-left  : 40px;
+}
+
+.loudspeaker__arrow {
+	position     : absolute;
+	height       : 25px;
+	width        : 25px;
+	left         : 461px;
+	top          : 20px;
+	border-radius: 0;
+}
+
+header {
+	display      : grid;
+	justify-items: center;
+	margin-top   : 100px;
+	width        : 100%;
+}
+
+.booking {
+	display      : grid;
+	justify-items: baseline;
+}
+
+.booking__wrap {
+	display      : grid;
+	justify-items: baseline;
+	margin-top   : 100px;
+}
+
+.booking__social-date-block {
+	display              : grid;
+	width                : 623px;
+	height               : 80px;
+	border               : 1px dashed #9747ff;
+	border-radius        : 5px;
+	justify-items        : center;
+	align-items          : center;
+	grid-template-columns: auto auto auto;
+}
+
+.social-block {
+	display              : grid;
+	grid-template-columns: auto auto;
+	justify-items        : center;
+	box-sizing           : border-box;
+	border               : 1px dashed #9747ff;
+	border-radius        : 5px;
+	align-items          : center;
+	width                : 210px;
+	height               : 80px;
+}
+
+
+.social-icon {
+	display      : grid;
+	box-sizing   : border-box;
+	width        : 40px;
+	height       : 40px;
+	border       : 2px solid #D5621D;
+	border-radius: 5px;
+	justify-self : center;
+	align-items  : center;
+}
+
+.social-icon:first-child {
+	display      : grid;
+	box-sizing   : border-box;
+	width        : 40px;
+	height       : 40px;
+	border       : 2px solid #d5621d;
+	border-radius: 5px;
+	align-items  : center;
+}
+
+.icon {
+	display     : grid;
+	justify-self: center;
+}
+
+.booking__date {
+	display              : grid;
+	margin-left          : 230px;
+	width                : 174px;
+	height               : 35px;
+	grid-template-columns: auto auto auto;
+	background           : #D5621D;
+	border-radius        : 5px;
+	justify-items        : center;
+	align-items          : center;
+}
+
+.data,
+.time {
+	height        : 19px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+}
+
+.booking__block-dish {
+	display              : grid;
+	grid-template-columns: auto auto;
+	height               : 110px;
+	width                : 110px;
+	border-radius        : 0px;
+}
+
+.dish-and-price__wrap {
+	display              : grid;
+	width                : 486px;
+	grid-template-columns: auto auto;
+	margin-top           : 100px;
+}
+
+.dish-and-price {
+	display              : grid;
+	grid-template-columns: auto auto;
+	padding-left         : 25px;
+}
+
+.booking__dish-describe-block__wrap {
+	display     : grid;
+	padding-left: 25px;
+}
+
+.booking__block-dish-describe {
+	display              : grid;
+	grid-template-columns: auto auto;
+	width                : 351px;
+	height               : 38px;
+}
+
+.dish {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	height        : 110px;
+	width         : auto;
+	border-radius : 0;
+}
+
+.price {
+	display       : grid;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	box-sizing    : border-box;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	width         : 84px;
+	height        : 38px;
+	border        : 2px solid #d5621d;
+	border-radius : 5px;
+	justify-self  : end;
+}
+
+.block-weight__wrap {
+	display: grid;
+}
+
+.weight {
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #D5621D;
+}
+
+.dish-describe {
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #FFFFFF;
+}
+
+.booking-button {
+	font-family   : Stolzl;
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 14px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	box-sizing    : border-box;
+	padding       : 15px 30px;
+	width         : 188px;
+	height        : 51px;
+	border        : 2px solid #d5621d;
+	border-radius : 5px;
+	margin-top    : 100px;
+}
+
+.booking-button-kitchen__wrap {
+	display      : grid;
+	justify-items: center;
+	width        : 623px;
+	border-radius: 0;
+}
+
+.booking-top-menu {
+	display       : grid;
+	width         : 204px;
+	height        : 21px;
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210e09;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	background    : #fff;
+	border-radius : 5px;
+	margin-top    : 100px;
+}
+
+.booking-kitchen {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.link-arrow-left {
+	display      : grid;
+	width        : 50px;
+	height       : 50px;
+	background   : #d5621d;
+	border-radius: 5px;
+	justify-self : baseline;
+	align-self   : center;
+	margin-top   : 100px;
+}
+
+.arrow-left-pic {
+	display     : grid;
+	justify-self: center;
+	align-self  : center;
+}
+
+.left-modify-booking {
+	display     : grid;
+	justify-self: baseline;
+	margin-top  : 100px;
+	align-self  : center;
+	padding     : 6px;
+}
+
+.left-modify-booking-menu {
+	display     : grid;
+	justify-self: baseline;
+	margin-top  : 100px;
+	align-self  : center;
+}
+
+.contacts {
+	display      : grid;
+	width        : 100%;
+	justify-items: center;
+}
+
+.contacts__wrap {
+	margin-top   : 150px;
+	display      : grid;
+	justify-items: center;
+}
+
+.contacts__map {
+	height       : 656px;
+	width        : 856px;
+	border-radius: 5px;
+}
+
+.contacts__top-link {
+	width         : 210px;
+	height        : 21px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 14px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #210E09;
+	display       : grid;
+	padding       : 10px 20px 7px;
+	gap           : 10px;
+	background    : #FFFFFF;
+	border-radius : 5px;
+}
+
+.management-block {
+	display   : grid;
+	margin-top: 45px;
+}
+
+.contacts__headline {
+	font-family   : "Gotham Pro";
+	font-style    : normal;
+	font-weight   : 400;
+	font-size     : 40px;
+	line-height   : 150%;
+	text-align    : center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #fff;
+	margin-top    : 40px;
+}
+
+.contacts__block-map-contacts {
+	display              : grid;
+	grid-template-columns: auto auto;
+	margin-top           : 80px;
+}
+
+.block-adress,
+.block-phone,
+.operating-mode-block {
+	display   : grid;
+	width     : 316px;
+	height    : 89px;
+	margin-top: 35px;
+}
+
+
+
+.adress-headline,
+.phone-headline,
+.operating-mode-headline {
+	width         : 316px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.adress-location,
+.operating-mode-during,
+.phone-number {
+	width      : 316px;
+	height     : 42px;
+	font-family: Stolzl;
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #fff;
+	margin-top : 20px;
+}
+
+.contacts__map {
+	margin-left: 24px;
+}
+
+.contacts__address {
+	height       : 656px;
+	width        : 416px;
+	padding-left : 50px;
+	background   : rgba(213, 98, 29, 0.1);
+	border       : 2px solid #D5621D;
+	border-radius: 5px;
+}
+
+.director__headline,
+.art-director__headline {
+	width         : 316px;
+	height        : 27px;
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.director__name,
+.art-director__name {
+	width      : 316px;
+	height     : 21px;
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #FFFFFF;
+}
+
+
+.line {
+	display   : grid;
+	opacity   : 0.5;
+	border    : 1px solid #fff;
+	margin-top: 45px;
+	height    : 0px;
+	width     : 316px;
+}
+
+.art-director-block {
+	display   : grid;
+	margin-top: 35px;
+}
+
+footer {
+	display      : grid;
+	width        : 100%;
+	margin-bottom: 30px;
+}
+
+
+.footer__wrap {
+	display              : grid;
+	grid-template-columns: auto auto;
+	margin-top           : 100px;
+	padding-top          : 30px;
+	justify-content      : space-between;
+	opacity              : 0.5;
+	border-top           : 1px solid #fff;
+}
+
+.footer__copyright,
+.footer__developed {
+	font-family: 'Stolzl';
+	font-style : normal;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 150%;
+	color      : #FFFFFF;
+	opacity    : 0.5;
+}
