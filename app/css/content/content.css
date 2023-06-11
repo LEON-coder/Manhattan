@@ -1008,9 +1008,10 @@ footer {
 	}
 
 	.contacts__map--425px {
-		display   : flex;
-		margin-top: 40px;
-		width     : 90%;
+		display      : grid;
+		margin-top   : 40px;
+		width        : 100%;
+		justify-items: center;
 	}
 
 	.director__headline,

@@ -1415,6 +1415,16 @@ body {
     padding-left   : 0;
   }
 
+  .line {
+    display     : grid;
+    opacity     : 0.5;
+    border      : 1px solid #fff;
+    margin-top  : 45px;
+    height      : 0;
+    width       : 90%;
+    justify-self: center;
+  }
+
   .contacts__map {
     height       : 656px;
     width        : 90%;
@@ -1438,6 +1448,12 @@ body {
     margin-left   : 60px;
   }
 
+  .main-block-anounce__tab {
+    display              : grid;
+    grid-template-columns: auto;
+    justify-items        : center;
+  }
+
   .main-block-anounce-right-block {
     width: 100%;
   }
@@ -1448,6 +1464,25 @@ body {
     margin-top           : 80px;
     width                : 100%;
     justify-items        : center;
+  }
+
+  .contacts__map {
+    display: none;
+  }
+
+  .contacts__map--1024px {
+    display: none;
+  }
+
+  .contacts__map--768px {
+    display: none;
+  }
+
+  .contacts__map--425px {
+    display      : grid;
+    margin-top   : 40px;
+    width        : 100%;
+    justify-items: center;
   }
 
 

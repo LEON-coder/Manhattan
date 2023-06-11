@@ -421,6 +421,11 @@ body {
 		width                : 90%;
 	}
 
+	.techrider__sound-produsers-block {
+		display      : grid;
+		justify-items: center;
+	}
+
 
 	.sound-produser:first-child {
 		margin-top: 0;

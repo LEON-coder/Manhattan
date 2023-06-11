@@ -841,11 +841,11 @@ p.ism-badge a.ism-link:hover {
 
 @media screen and (max-width:1024px) {
   #my-slider {
-   width                : 700px;
-   -webkit-border-radius: 5px;
-   border-radius        : 5px;
-   height               : 1050px;
- }
+    width                : 700px;
+    -webkit-border-radius: 5px;
+    border-radius        : 5px;
+    height               : 1050px;
+  }
 
   #my-slider .ism-button-next {
     background-image   : url(../../../slider/ep_arrow-right.svg);
@@ -1060,7 +1060,9 @@ p.ism-badge a.ism-link:hover {
   }
 
   .block_events__describe {
-    height: 230px;
-    width : 90%;
+    height       : 230px;
+    width        : 90%;
+    margin-top   : 30px;
+    margin-bottom: 30px;
   }
 }
