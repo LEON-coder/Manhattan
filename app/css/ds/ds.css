@@ -131,7 +131,7 @@ header {
 
 .ds-menu__wrap {
 	display   : grid;
-	width     : 1305px;
+	width     : 90%;
 	margin-top: 100px;
 }
 
@@ -156,7 +156,7 @@ header {
 
 .ds-menu__loudspeakers {
 	box-sizing   : border-box;
-	width        : 566px;
+	width        : 80%;
 	height       : 209px;
 	border       : 1px dashed #9747ff;
 	border-radius: 5px;
@@ -168,7 +168,7 @@ header {
 
 .loudspeaker {
 	display      : grid;
-	width        : 526px;
+	width        : 90%;
 	height       : 67px;
 	background   : rgba(213, 98, 29, 0.1);
 	border-radius: 5px;
@@ -205,7 +205,6 @@ header {
 	position     : absolute;
 	height       : 25px;
 	width        : 25px;
-	left         : 461px;
 	top          : 20px;
 	border-radius: 0;
 }
@@ -664,4 +663,505 @@ footer {
 	line-height: 150%;
 	color      : #FFFFFF;
 	opacity    : 0.5;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(3, auto);
+		margin-left          : auto;
+		margin-right         : auto;
+	}
+
+	.mobile--menu {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+
+	.header__wrap {
+		width                : 90%;
+		display              : grid;
+		justify-items        : center;
+		grid-template-columns: 6fr;
+	}
+
+	.wrapper {
+		display: grid;
+		width  : 100%;
+	}
+
+	.hidden-menu-ticker {
+		display: none;
+	}
+
+	.nav {
+		display              : grid;
+		grid-template-columns: auto;
+		align-items          : center;
+		margin-top           : 30px;
+	}
+
+	.nav__list {
+		display              : none;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : 211px;
+		margin-right         : 189px;
+	}
+
+	.mobile--menu {
+		display: grid;
+	}
+
+	.btn-menu {
+		background                 : #fff;
+		padding                    : 5px;
+		position                   : fixed;
+		top                        : 30px;
+		right                      : 30px;
+		cursor                     : pointer;
+		transition                 : left .23s;
+		z-index                    : 3;
+		width                      : 25px;
+		-webkit-transform          : translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-border-radius      : 2px;
+		-moz-border-radius         : 2px;
+		border-radius              : 2px;
+	}
+
+	.btn-menu span {
+		display         : block;
+		height          : 5px;
+		background-color: #222;
+		margin          : 5px 0 0;
+		transition      : all .1s linear .23s;
+		position        : relative;
+	}
+
+	.btn-menu span.first {
+		margin-top: 0;
+	}
+
+
+	.hidden-menu {
+		display                    : block;
+		position                   : fixed;
+		list-style                 : none;
+		padding                    : 50px 10px 10px;
+		margin                     : 0;
+		box-sizing                 : border-box;
+		width                      : 200px;
+		background-color           : #fdf7f7;
+		height                     : 100%;
+		top                        : 0;
+		left                       : -200px;
+		transition                 : left .2s;
+		z-index                    : 2;
+		-webkit-transform          : translateZ(0);
+		-webkit-backface-visibility: hidden;
+	}
+
+	.hidden-menu li {
+		padding-top   : 10px;
+		padding-bottom: 50px;
+	}
+
+	.hidden-menu li a {
+		font-size      : 15px;
+		color          : #FFFFFF;
+		padding        : 6px 0px;
+		text-decoration: none;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu {
+		right: 30px;
+	}
+
+	.hidden-menu-ticker:checked~.hidden-menu {
+		left           : 0px;
+		width          : 100%;
+		background     : #210E09;
+		display        : flex;
+		flex-direction : column;
+		align-items    : center;
+		height         : 100%;
+		justify-content: space-between;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu span.first {
+		-webkit-transform: rotate(45deg);
+		top              : 10px;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu span.second {
+		opacity: 0;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu span.third {
+		-webkit-transform: rotate(-45deg);
+		top              : -10px;
+	}
+
+	.ds-menu {
+		display: grid;
+		width  : 100%;
+	}
+
+	.ds-menu-link {
+		display       : grid;
+		font-family   : "Gotham Pro";
+		font-style    : normal;
+		font-weight   : 700;
+		font-size     : 18px;
+		line-height   : 150%;
+		text-align    : center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #fff;
+		gap           : 10px;
+		width         : 171px;
+		height        : 57px;
+		background    : #d5621d;
+		border-radius : 5px;
+		align-items   : center;
+		justify-self  : center;
+	}
+
+	.ds-menu__loudspeakers {
+		box-sizing   : border-box;
+		width        : 100%;
+		height       : 209px;
+		border       : 1px dashed #9747ff;
+		border-radius: 5px;
+		margin-top   : 100px;
+		display      : grid;
+		justify-items: center;
+		align-items  : center;
+	}
+
+	.ds-menu__wrap {
+		display   : grid;
+		width     : 100%;
+		margin-top: 200px;
+	}
+
+	.loudspeaker {
+		display      : grid;
+		width        : 90%;
+		height       : 67px;
+		background   : rgba(213, 98, 29, 0.1);
+		border-radius: 5px;
+		justify-self : center;
+	}
+
+	.loudspeaker__wrap {
+		position: relative;
+		width   : 100%;
+		height  : 27px;
+	}
+
+	.booking__wrap {
+		display      : grid;
+		justify-items: baseline;
+		margin-top   : 100px;
+		width        : 90%;
+	}
+
+	.dish-and-price__wrap {
+		display              : grid;
+		width                : 100%;
+		grid-template-columns: auto;
+		margin-top           : 100px;
+	}
+
+	.dish {
+		font-family   : "Gotham Pro";
+		font-style    : normal;
+		font-weight   : 700;
+		font-size     : 18px;
+		line-height   : 150%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #fff;
+		height        : auto;
+		width         : auto;
+		border-radius : 0;
+	}
+
+	.booking {
+		display      : grid;
+		justify-items: center;
+		width        : 100%;
+	}
+
+	.booking__date {
+		display              : grid;
+		margin-left          : 0;
+		width                : 174px;
+		height               : 35px;
+		grid-template-columns: auto auto auto;
+		background           : #D5621D;
+		border-radius        : 5px;
+		justify-items        : center;
+		align-items          : center;
+		margin-top           : 50px;
+	}
+
+	.booking__social-date-block {
+		display              : grid;
+		width                : 100%;
+		height               : auto;
+		border               : 1px dashed #9747ff;
+		border-radius        : 5px;
+		justify-items        : center;
+		align-items          : center;
+		grid-template-columns: auto;
+	}
+
+	.booking__block-dish-describe {
+		display              : grid;
+		grid-template-columns: auto auto;
+		width                : 90%;
+		height               : auto;
+	}
+
+	.booking__block-dish {
+		display              : grid;
+		grid-template-columns: auto;
+		height               : 110px;
+		width                : 110px;
+		border-radius        : 0px;
+		padding-left         : 30px;
+	}
+
+	.weight {
+		font-family  : 'Stolzl';
+		font-style   : normal;
+		font-weight  : 400;
+		font-size    : 14px;
+		line-height  : 150%;
+		color        : #D5621D;
+		margin-top   : 20px;
+		margin-bottom: 10px;
+	}
+
+	.booking__dish-describe-block__wrap {
+		display     : grid;
+		padding-left: 30px;
+		margin-top  : 30px;
+	}
+
+	.booking-button {
+		font-family   : Stolzl;
+		font-style    : normal;
+		font-weight   : 400;
+		font-size     : 14px;
+		line-height   : 150%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #fff;
+		box-sizing    : border-box;
+		padding       : 15px 30px;
+		width         : 188px;
+		height        : 51px;
+		border        : 2px solid #d5621d;
+		border-radius : 5px;
+		margin-top    : 100px;
+		text-align    : center;
+		justify-self  : center;
+	}
+
+	.loudspeaker__arrow {
+		position     : absolute;
+		height       : 25px;
+		width        : 25px;
+		right        : 20px;
+		top          : 20px;
+		border-radius: 0;
+	}
+
+	.block-weight__wrap {
+		display: grid;
+		width  : 90%;
+	}
+
+	.left-modify-booking-menu {
+		display     : grid;
+		margin-top  : 100px;
+		align-self  : center;
+		justify-self: auto;
+	}
+
+	.booking-button-kitchen__wrap {
+		display      : grid;
+		justify-items: center;
+		width        : 100%;
+		border-radius: 0;
+	}
+
+	.contacts__wrap {
+		margin-top   : 100px;
+		display      : grid;
+		justify-items: center;
+		width        : 100%;
+	}
+
+	.contacts__block-map-contacts {
+		display              : grid;
+		grid-template-columns: auto;
+		margin-top           : 80px;
+		width                : 100%;
+		justify-items        : center;
+	}
+
+	.contacts__map {
+		margin-left: 24px;
+		display    : none;
+	}
+
+	.contacts__address {
+		height       : 656px;
+		width        : 90%;
+		padding-left : 0px;
+		background   : rgba(213, 98, 29, 0.1);
+		border       : 2px solid #D5621D;
+		border-radius: 5px;
+		display      : grid;
+		justify-items: center;
+	}
+
+	.adress-headline,
+	.phone-headline,
+	.operating-mode-headline {
+		width         : 90%;
+		height        : 27px;
+		font-family   : 'Gotham Pro';
+		font-style    : normal;
+		font-weight   : 700;
+		font-size     : 18px;
+		line-height   : 150%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #FFFFFF;
+	}
+
+	.block-adress,
+	.block-phone,
+	.operating-mode-block {
+		display   : grid;
+		width     : 90%;
+		height    : 89px;
+		margin-top: 35px;
+	}
+
+	.adress-location,
+	.operating-mode-during,
+	.phone-number {
+		width      : 100%;
+		height     : 42px;
+		font-family: Stolzl;
+		font-style : normal;
+		font-weight: 400;
+		font-size  : 14px;
+		line-height: 150%;
+		color      : #fff;
+		margin-top : 20px;
+	}
+
+	.line {
+		display   : grid;
+		opacity   : 0.5;
+		border    : 1px solid #fff;
+		margin-top: 45px;
+		height    : 0px;
+		width     : 90%;
+	}
+
+	.director-block {
+		width: 90%;
+	}
+
+	.director__name,
+	.art-director__name {
+		width      : 100%;
+		height     : 21px;
+		font-family: 'Stolzl';
+		font-style : normal;
+		font-weight: 400;
+		font-size  : 14px;
+		line-height: 150%;
+		color      : #FFFFFF;
+	}
+
+	.director__headline,
+	.art-director__headline {
+		width         : 90%;
+		height        : 27px;
+		font-family   : 'Gotham Pro';
+		font-style    : normal;
+		font-weight   : 700;
+		font-size     : 18px;
+		line-height   : 150%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #FFFFFF;
+	}
+
+	.management-block {
+		display      : grid;
+		margin-top   : 45px;
+		width        : 90%;
+		margin-bottom: 30px;
+	}
+
+	.contacts__map--1024px {
+		display: none;
+	}
+
+	.contacts__map--768px {
+		display: none;
+	}
+
+	.contacts__map--425px {
+		display   : flex;
+		margin-top: 40px;
+	}
+
+	.footer__wrap {
+		display              : grid;
+		grid-template-columns: auto;
+		margin-top           : 100px;
+		padding-top          : 30px;
+		justify-content      : center;
+		opacity              : 0.5;
+		border-top           : 1px solid #fff;
+	}
+
+	.footer__copyright,
+	.footer__developed {
+		font-family: 'Stolzl';
+		font-style : normal;
+		font-weight: 400;
+		font-size  : 14px;
+		line-height: 150%;
+		color      : #FFFFFF;
+		opacity    : 0.5;
+		text-align : center;
+	}
+
+	.footer__developed {
+		margin-top: 30px;
+	}
+
+
 }

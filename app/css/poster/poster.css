@@ -448,6 +448,11 @@ footer {
 
 
 @media screen and (max-width: 1440px) {
+
+	.mobile--menu {
+		display: none;
+	}
+
 	.nav__list {
 		display              : grid;
 		grid-template-columns: repeat(6, auto);
@@ -475,6 +480,9 @@ footer {
 	}
 
 
+	.mobile--menu {
+		display: none;
+	}
 
 	header {
 		display      : grid;
@@ -595,6 +603,11 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+
+	.mobile--menu {
+		display: none;
+	}
+
 	.nav__list {
 		display              : grid;
 		grid-template-columns: repeat(6, auto);

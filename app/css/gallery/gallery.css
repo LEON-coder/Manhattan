@@ -487,3 +487,493 @@ footer {
 	color      : #FFFFFF;
 	opacity    : 0.5;
 }
+
+
+
+@media screen and (max-width: 1440px) {
+
+	.mobile--menu {
+		display: none;
+	}
+
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : 150px;
+		margin-right         : 100px;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.wrapper {
+		display      : grid;
+		width        : 100%;
+		justify-items: center;
+	}
+
+	.nav {
+		display              : grid;
+		grid-template-columns: auto;
+		align-items          : center;
+		margin-top           : 0;
+		width                : 100%;
+		position             : relative;
+	}
+
+
+	.mobile--menu {
+		display: none;
+	}
+
+	header {
+		display      : grid;
+		width        : 100%;
+		justify-items: center;
+	}
+
+
+	.header__wrap {
+		width                : 90%;
+		display              : grid;
+		grid-template-columns: 6fr;
+		margin-top           : 30px;
+	}
+
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : 0;
+		margin-top           : 50px;
+		margin-right         : 0;
+		justify-items        : center;
+	}
+
+	.nav__booking-button {
+		height               : 21px;
+		font-family          : "Stolzl";
+		font-style           : normal;
+		font-weight          : 400;
+		font-size            : 14px;
+		line-height          : 150%;
+		letter-spacing       : 0.05em;
+		text-transform       : uppercase;
+		color                : #fff;
+		padding              : 15px 30px;
+		border               : 2px solid #d5621d;
+		border-radius        : 5px;
+		display              : grid;
+		text-decoration      : none;
+		margin-top           : 40px;
+		justify-self         : self-end;
+		grid-template-columns: auto auto;
+		position             : absolute;
+		bottom               : -100px;
+		left                 : 40%;
+	}
+
+	.manhattan-party {
+		display   : grid;
+		width     : 100%;
+		margin-top: 130px;
+	}
+
+	.manhattan-party__wrap {
+		display      : grid;
+		width        : 100%;
+		justify-items: center;
+	}
+
+	.manhattan-party__block-posters {
+		display              : grid;
+		grid-template-columns: repeat(2, 306px);
+		gap                  : 24px;
+		margin-top           : 80px;
+	}
+
+	.contacts__block-map-contacts {
+		display              : grid;
+		grid-template-columns: auto auto;
+		margin-top           : 80px;
+		width                : 100%;
+	}
+
+	.contacts__map {
+		margin-left: 24px;
+		display    : none;
+	}
+
+	.contacts__map--1024px {
+		display: grid;
+	}
+
+	.contacts__address {
+		height       : 656px;
+		width        : 365px;
+		padding-left : 50px;
+		background   : rgba(213, 98, 29, 0.1);
+		border       : 2px solid #D5621D;
+		border-radius: 5px;
+		margin-right : 35px;
+	}
+
+	footer {
+		display: grid;
+		width  : 100%;
+	}
+
+	.footer__copyright {
+		font-family : 'Stolzl';
+		font-style  : normal;
+		font-weight : 400;
+		font-size   : 14px;
+		line-height : 150%;
+		color       : #FFFFFF;
+		opacity     : 0.5;
+		padding-left: 80px;
+	}
+
+	.footer__developed {
+		padding-right: 80px;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+	.mobile--menu {
+		display: none;
+	}
+
+	.nav__list {
+		display              : grid;
+		grid-template-columns: repeat(6, auto);
+		margin-left          : auto;
+		margin-right         : auto;
+	}
+
+	.contacts__block-map-contacts {
+		display              : grid;
+		grid-template-columns: auto;
+		margin-top           : 80px;
+		width                : 100%;
+	}
+
+	.contacts__address {
+		height       : 656px;
+		width        : 90%;
+		padding-left : 50px;
+		background   : rgba(213, 98, 29, 0.1);
+		border       : 2px solid #D5621D;
+		border-radius: 5px;
+		margin-right : 0;
+		margin-bottom: 40px;
+	}
+
+	.contacts__map {
+		display: none;
+	}
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+	.mobile--menu {
+		display: grid;
+	}
+
+	.nav__list {
+		display: none;
+	}
+
+	.nav__booking-button {
+		height               : 21px;
+		font-family          : "Stolzl";
+		font-style           : normal;
+		font-weight          : 400;
+		font-size            : 14px;
+		line-height          : 150%;
+		letter-spacing       : 0.05em;
+		text-transform       : uppercase;
+		color                : #fff;
+		padding              : 15px 30px;
+		border               : 2px solid #d5621d;
+		border-radius        : 5px;
+		display              : grid;
+		text-decoration      : none;
+		justify-self         : center;
+		grid-template-columns: auto;
+		margin-top           : 80px;
+		position             : initial;
+	}
+
+	.hidden-menu-ticker {
+		display: none;
+	}
+
+	.mobile--menu {
+		display: grid;
+	}
+
+	.btn-menu {
+		background                 : #fff;
+		padding                    : 5px;
+		position                   : fixed;
+		top                        : 30px;
+		right                      : 30px;
+		cursor                     : pointer;
+		transition                 : left .23s;
+		z-index                    : 3;
+		width                      : 25px;
+		-webkit-transform          : translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-border-radius      : 2px;
+		-moz-border-radius         : 2px;
+		border-radius              : 2px;
+	}
+
+	.btn-menu span {
+		display         : block;
+		height          : 5px;
+		background-color: #222;
+		margin          : 5px 0 0;
+		transition      : all .1s linear .23s;
+		position        : relative;
+	}
+
+	.btn-menu span.first {
+		margin-top: 0;
+	}
+
+
+	.hidden-menu {
+		display                    : block;
+		position                   : fixed;
+		list-style                 : none;
+		padding                    : 50px 10px 10px;
+		margin                     : 0;
+		box-sizing                 : border-box;
+		width                      : 200px;
+		background-color           : #fdf7f7;
+		height                     : 100%;
+		top                        : 0;
+		left                       : -200px;
+		transition                 : left .2s;
+		z-index                    : 2;
+		-webkit-transform          : translateZ(0);
+		-webkit-backface-visibility: hidden;
+	}
+
+	.hidden-menu li {
+		padding-top   : 10px;
+		padding-bottom: 50px;
+	}
+
+	.hidden-menu li a {
+		font-size      : 15px;
+		color          : #FFFFFF;
+		padding        : 6px 0px;
+		text-decoration: none;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu {
+		right: 30px;
+	}
+
+	.hidden-menu-ticker:checked~.hidden-menu {
+		left           : 0px;
+		width          : 100%;
+		background     : #210E09;
+		display        : flex;
+		flex-direction : column;
+		align-items    : center;
+		height         : 100%;
+		justify-content: space-between;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu span.first {
+		-webkit-transform: rotate(45deg);
+		top              : 10px;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu span.second {
+		opacity: 0;
+	}
+
+	.hidden-menu-ticker:checked~.btn-menu span.third {
+		-webkit-transform: rotate(-45deg);
+		top              : -10px;
+	}
+
+	.manhattan-photo__block-pictures {
+		display              : grid;
+		grid-template-columns: auto;
+		gap                  : 24px;
+		margin-top           : 100px;
+		width                : 100%;
+	}
+
+	.manhattan-background-pic {
+		display   : grid;
+		width     : 100%;
+		height    : 350px;
+		transition: 1s ease;
+	}
+
+	.contacts__address {
+		height       : 656px;
+		width        : 70%;
+		padding-left : 50px;
+		background   : rgba(213, 98, 29, 0.1);
+		border       : 2px solid #D5621D;
+		border-radius: 5px;
+		margin-right : 0;
+		margin-bottom: 40px;
+	}
+
+	.block-adress,
+	.block-phone,
+	.operating-mode-block {
+		display   : grid;
+		width     : 80%;
+		height    : 89px;
+		margin-top: 35px;
+	}
+
+	.adress-headline,
+	.phone-headline,
+	.operating-mode-headline {
+		width         : 90%;
+		height        : 27px;
+		font-family   : 'Gotham Pro';
+		font-style    : normal;
+		font-weight   : 700;
+		font-size     : 18px;
+		line-height   : 150%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #FFFFFF;
+	}
+
+	.adress-location,
+	.operating-mode-during,
+	.phone-number {
+		width      : 100%;
+		height     : 42px;
+		font-family: Stolzl;
+		font-style : normal;
+		font-weight: 400;
+		font-size  : 14px;
+		line-height: 150%;
+		color      : #fff;
+		margin-top : 20px;
+	}
+
+	.line {
+		display   : grid;
+		opacity   : 0.5;
+		border    : 1px solid #fff;
+		margin-top: 45px;
+		height    : 0px;
+		width     : 90%;
+	}
+
+	.contacts__block-map-contacts {
+		display              : grid;
+		grid-template-columns: auto;
+		margin-top           : 80px;
+		width                : 100%;
+		justify-items        : center;
+	}
+
+	.contacts__map--1024px {
+		display: none;
+	}
+
+	.contacts__map--768px {
+		display: none;
+	}
+
+	.contacts__map--425px {
+		display   : flex;
+		margin-top: 40px;
+		width     : 90%;
+	}
+
+	.director__headline,
+	.art-director__headline {
+		width         : 90%;
+		height        : 27px;
+		font-family   : 'Gotham Pro';
+		font-style    : normal;
+		font-weight   : 700;
+		font-size     : 18px;
+		line-height   : 150%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color         : #FFFFFF;
+	}
+
+	.director__name,
+	.art-director__name {
+		width      : 90%;
+		height     : 21px;
+		font-family: 'Stolzl';
+		font-style : normal;
+		font-weight: 400;
+		font-size  : 14px;
+		line-height: 150%;
+		color      : #FFFFFF;
+	}
+
+	footer {
+		display        : grid;
+		width          : 100%;
+		margin-bottom  : 30px;
+		justify-content: center;
+	}
+
+	.footer__wrap {
+		display              : grid;
+		grid-template-columns: auto;
+		margin-top           : 100px;
+		padding-top          : 30px;
+		opacity              : 0.5;
+		border-top           : 1px solid #fff;
+		justify-items        : center;
+		margin-left          : auto;
+		margin-right         : auto;
+		width                : 100%;
+	}
+
+	.footer__copyright {
+		font-family : 'Stolzl';
+		font-style  : normal;
+		font-weight : 400;
+		font-size   : 14px;
+		line-height : 150%;
+		color       : #FFFFFF;
+		opacity     : 0.5;
+		padding-left: 0px;
+	}
+
+	.footer__developed {
+		font-family  : 'Stolzl';
+		font-style   : normal;
+		font-weight  : 400;
+		font-size    : 14px;
+		line-height  : 150%;
+		color        : #FFFFFF;
+		opacity      : 0.5;
+		padding-right: 0px;
+	}
+
+
+}

@@ -112,6 +112,10 @@ header {
 	grid-template-columns: 6fr;
 }
 
+.mobile--menu {
+	display: none;
+}
+
 .nav__booking-button {
 	height         : 21px;
 	font-family    : "Stolzl";
@@ -490,6 +494,10 @@ footer {
 		align-items  : center;
 	}
 
+	.mobile--menu {
+		display: none;
+	}
+
 	.nav {
 		display              : grid;
 		grid-template-columns: repeat(4, auto);
@@ -596,6 +604,10 @@ footer {
 		display              : grid;
 		justify-items        : center;
 		grid-template-columns: 6fr;
+	}
+
+	.mobile--menu {
+		display: none;
 	}
 
 	.nav {
