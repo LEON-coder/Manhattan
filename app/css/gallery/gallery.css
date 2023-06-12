@@ -125,6 +125,10 @@ header {
 	text-decoration: none;
 }
 
+.mobile--menu {
+	display: none;
+}
+
 .manhattan-photo__wrap {
 	display      : grid;
 	justify-items: center;

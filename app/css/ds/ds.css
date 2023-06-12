@@ -9,8 +9,7 @@
 @font-face {
 	font-family: "Stolzl";
 	font-style : normal;
-	src        : local("app/fonts/Stolzl/stolzl_regular.otf"), local("../../app/fonts/Stolzl/Stolzl-Regular.woff"),
-		local("app/fonts/Stolzl/stolzl_medium.otf");
+	src        : local("../../../app/fonts/Stolzl/Stolzl-Regular.woff"), local("../../../app/fonts/Stolzl/stolzl_medium.otf");
 	font-weight: 400;
 }
 
@@ -122,7 +121,9 @@ header {
 	text-decoration: none;
 }
 
-
+.mobile--menu {
+	display: none;
+}
 
 .ds-menu {
 	display: grid;
@@ -162,21 +163,132 @@ header {
 	border-radius: 5px;
 	margin-top   : 100px;
 	display      : grid;
-	justify-items: center;
 	align-items  : center;
 }
 
 .loudspeaker {
 	display      : grid;
-	width        : 90%;
+	width        : 526px;
 	height       : 67px;
 	background   : rgba(213, 98, 29, 0.1);
 	border-radius: 5px;
 }
 
-.loudspeaker:hover {
+.opening-menu__headline {
+	font-family   : 'Gotham Pro';
+	font-style    : normal;
+	font-weight   : 700;
+	font-size     : 18px;
+	line-height   : 150%;
+	text-transform: uppercase;
+	color         : #FFFFFF;
+}
+
+.showed-item {
+	width           : 415px;
+	height          : auto;
+	font-family     : 'Stolzl';
+	font-style      : normal;
+	font-weight     : 400;
+	font-size       : 14px;
+	line-height     : 150%;
+	color           : #fff;
+	list-style      : none;
+	margin-bottom   : 20px;
+	list-style-image: url();
+	transition      : 1s;
+}
+
+.opening-menu__arrow {
+	display : grid;
+	position: absolute;
+	top     : 20px;
+	right   : 40px;
+}
+
+details {
+	background   : rgba(213, 98, 29, 0.1);
+	width        : 526px;
+	margin-top   : 20px;
+	margin-left  : 20px;
+	margin-bottom: 20px;
+}
+
+details:hover {
+	background: #D5621D;
+}
+
+
+details div {
+	padding     : 1.5em;
+	background  : #D5621D;
+	height      : 253px;
+	transition  : 1s;
+	padding-left: 70px;
+}
+
+details div>*+* {
+	margin-top: 1.5em;
+}
+
+
+details+details {
+	background: rgba(213, 98, 29, 0.1);
+	transition: 1s;
+	z-index   : 67;
+	margin-top: 0;
+}
+
+summary {
+	padding     : 0.05em 1em;
+	cursor      : pointer;
+	position    : relative;
+	padding-left: calc(1.75rem + 0.75rem + 0.75rem);
+	height      : 67px;
+	display     : flex;
+	align-items : center;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary:before {
+	position        : absolute;
+	top             : 50%;
+	transform       : translateY(-50%);
+	left            : .75rem;
+	background      : url(../../app/img/techrider/techrider__sound-produsers/ep_arrow-up-bold.svg);
+	width           : 1.75rem;
+	height          : 1.75rem;
+	background-color: #000;
+	color           : #FFF;
+	display         : inline-flex;
+	justify-content : center;
+	align-items     : center;
+	flex-shrink     : 0;
+}
+
+details[open] summary {
 	background   : #D5621D;
+	border-radius: 5px 5px 0px 0px;
+	height       : 67px;
+}
+
+details[open] summary:after {
+	background       : url('app/img/techrider/techrider__sound-produsers/ep_arrow-up-bold.svg');
+	background-repeat: no-repeat;
+}
+
+.ds-menu__loudspeakers {
+	box-sizing   : border-box;
+	width        : 80%;
+	height       : auto;
+	border       : 1px dashed #9747ff;
 	border-radius: 5px;
+	margin-top   : 100px;
+	display      : grid;
+	align-items  : center;
 }
 
 .loudspeaker__wrap {
@@ -207,6 +319,7 @@ header {
 	width        : 25px;
 	top          : 20px;
 	border-radius: 0;
+	right        : 0;
 }
 
 header {
@@ -498,6 +611,18 @@ header {
 	height       : 656px;
 	width        : 856px;
 	border-radius: 5px;
+}
+
+.contacts__map--1024px {
+	display: none;
+}
+
+.contacts__map--768px {
+	display: none;
+}
+
+.contacts__map--425px {
+	display: none;
 }
 
 .contacts__top-link {
