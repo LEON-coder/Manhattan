@@ -772,7 +772,8 @@ footer {
 	}
 
 	.hidden-menu-ticker:checked~.btn-menu {
-		right: 30px;
+		right  : 30px;
+		z-index: 90;
 	}
 
 	.hidden-menu-ticker:checked~.hidden-menu {
@@ -784,6 +785,7 @@ footer {
 		align-items    : center;
 		height         : 100%;
 		justify-content: space-between;
+		z-index        : 78;
 	}
 
 	.hidden-menu-ticker:checked~.btn-menu span.first {
