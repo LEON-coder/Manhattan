@@ -386,6 +386,19 @@ header {
 	margin-left: 24px;
 }
 
+.contacts__map--1024px {
+	display: none;
+}
+
+.contacts__map--768px {
+	display: none;
+}
+
+.contacts__map--425px {
+	display: none;
+
+}
+
 .contacts__address {
 	height       : 656px;
 	width        : 416px;
