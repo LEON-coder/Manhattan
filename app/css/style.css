@@ -1069,6 +1069,7 @@ body {
     grid-template-columns: auto auto;
     margin-top           : 80px;
     width                : 100%;
+    justify-items        : center;
   }
 
   .contacts__address {
@@ -1085,6 +1086,11 @@ body {
     width        : 100%;
     border-radius: 5px;
     margin-left  : 0;
+    display      : none;
+  }
+
+  .contacts__map--1024px {
+    display: flex;
   }
 
   footer {
@@ -1187,23 +1193,29 @@ body {
     width: auto;
   }
 
-  .contacts__block-map-contacts {
-    display              : grid;
-    grid-template-columns: auto;
-    margin-top           : 80px;
-    width                : 100%;
-  }
-
   .contacts__address {
-    height         : 656px;
-    width          : 100%;
-    background     : rgba(213, 98, 29, 0.1);
-    border         : 2px solid #d5621d;
+    width          : 60%;
     border-radius  : 5px;
     justify-content: center;
     align-items    : center;
     display        : grid;
     padding-left   : 0;
+    margin-bottom  : 50px;
+  }
+
+  .contacts__map {
+    height       : 656px;
+    width        : 100%;
+    margin-top   : 30px;
+    border-radius: 5px;
+    margin-left  : 0;
+  }
+
+  .contacts__block-map-contacts {
+    display              : grid;
+    grid-template-columns: auto;
+    margin-top           : 80px;
+    width                : 100%;
   }
 
   .adress-headline,
@@ -1276,13 +1288,6 @@ body {
     margin-bottom: 40px;
   }
 
-  .contacts__map {
-    height       : 656px;
-    width        : 100%;
-    margin-top   : 30px;
-    border-radius: 5px;
-    margin-left  : 0;
-  }
 
   .events_and_turists-block__wrap {
     height               : auto;
